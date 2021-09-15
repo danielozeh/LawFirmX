@@ -49,5 +49,10 @@ Please check If the command is registered using: php artisan list
 You can run the scheduler using php artisan profile:pending
 
 
+
+USE DOCKER TO RUN THE PROJECT
+Open your terminal and navigate to the project directory:
+Run <b>docker-compose up --build (to build/rebuild the image)</b>
+
 Regards, 
 Daniel Ozeh
