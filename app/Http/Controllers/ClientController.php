@@ -113,12 +113,12 @@ class ClientController extends Controller
         try {
             $clients = Client::where('last_name', $request->last_name)->latest()->get();
 
-            if(count($clients) < 1) {
+            /*if(count($clients) < 1) {
                 return response()->json([
                     'status' => 'failed',
                     'message' => 'There are no client with that last name'
                 ], 400);
-            }
+            }*/
 
             return response()->json([
                 'status' => 'success',

@@ -213,7 +213,7 @@ class CaseController extends Controller
                     'subject' => 'New Case Created',
                     'first_name' => $request->first_name,
                     'last_name' => $request->last_name,
-                    'case_number' => $case_number
+                    'case_number' => strtoupper($case_number)
                 ];
         
                 Mail::to($request->email)->send(new CaseMail($details));
